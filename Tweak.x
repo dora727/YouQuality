@@ -44,8 +44,8 @@ static void configureButtonStyle(YTQTMButton *button) {
     [button setTitleColor:[%c(YTColor) white1] forState:0];
     YTDefaultTypeStyle *defaultTypeStyle = [%c(YTTypeStyle) defaultTypeStyle];
     UIFont *font = [defaultTypeStyle respondsToSelector:@selector(ytSansFontOfSize:weight:)]
-        ? [defaultTypeStyle ytSansFontOfSize:10 weight:UIFontWeightSemibold]
-        : [defaultTypeStyle fontOfSize:10 weight:UIFontWeightSemibold];
+        ? [defaultTypeStyle ytSansFontOfSize:10 weight:UIFontWeightBold]
+        : [defaultTypeStyle fontOfSize:10 weight:UIFontWeightBold];
     button.titleLabel.font = font;
     button.titleLabel.numberOfLines = 3;
     button.titleLabel.textAlignment = NSTextAlignmentCenter;
